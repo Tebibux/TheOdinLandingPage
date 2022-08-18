@@ -137,13 +137,17 @@ ul a {
 	font-weight: bold;
 }
 
-.detail-img-side {
+.detail .detail-img-side {
 	display: flex;
-	height: 150px;
-	align-items: center;
+	gap: 25px;
+
 }
-.detail-img-side .detail-img-side-img{
-	justify-content: start;
- }
+
+.detail-img-box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+}
 
 /* detail body ends here */
