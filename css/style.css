@@ -125,6 +125,7 @@ ul a {
 .detail {
 	width: 100%;
 	margin-top: 20px;
+	margin-bottom: 40px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -148,7 +149,7 @@ ul a {
 .detail-img-box {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: baseline;
 	justify-content: flex-start;
 	gap: 10px;
 }
@@ -167,6 +168,7 @@ ul a {
 }
 
 /* detail body ends here */
+/* random body starts here */
 .random-quote {
 	width: 100%;
 	padding: 5px 10%;
@@ -176,10 +178,65 @@ ul a {
 	flex-direction: column;
 	align-items: flex-start;
 	gap: 15px;
+
 }
-.random-quote .quote-text{
+
+.random-quote .quote-text {
 	margin-top: 10px;
 }
-.random-quote .quote-text-owner{
+
+.random-quote .quote-text-owner {
 	font-size: 12px;
+}
+
+/* random body ends here */
+/* sign up body starts here */
+.other-detail-signup {
+	width: 70%;
+	border-radius: 10px;
+	margin: 30px 0px;
+	background-color: #0a19f1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+
+.other-detail-signup-up {
+	width: 100%;
+	display: flex;
+	padding: 10px;
+	align-items: center;
+	justify-content: space-around;
+	gap: 10px;
+}
+
+.other-detail-signup-up .msg-signup {
+	display: flex;
+	flex-direction: column;
+}
+
+.other-detail-signup-up .SignUp button {
+	background: #28f8ff;
+	padding: 3px 9px;
+	width: 100%;
+	border-radius: 4px;
+}
+
+.other-detail-signup-up .SignUp button:hover {
+	background: #ffffff;
+}
+
+/* sign up body ends here */
+.footer {
+	width: 100%;
+	padding: 0 10%;
+	background: #1f2937;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.footer p{
+	padding: 17.5px;
 }
