@@ -4,6 +4,254 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="/css/style.css">
+	<style>
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 16px;
+			line-height: 1.5;
+			background: #fff;
+			justify-content: center;
+		}
+
+		.container {
+			border: 1px black solid;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			/* */
+
+		}
+
+		/* Header styling starts here. */
+		.header {
+			width: 100%;
+			padding: 0 10%;
+			background: #1f2937;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-between;
+
+		}
+
+		/* navigation header starts here */
+		.header-nav {
+			width: 100%;
+			display: flex;
+			margin-top: 15px;
+			align-items: center;
+			justify-content: space-between;
+		}
+
+		.header-nav-logo {
+			font-size: 24px;
+			color: #F9FAF8;
+			font-weight: bold;
+		}
+
+		.header-nav-lists {
+			color: #E5E7EB;
+			font-size: 18px;
+		}
+
+		ul {
+			list-style: none;
+		}
+
+		ul li {
+			list-style: none;
+			background: #7b8fac;
+			border-radius: 3px;
+			padding: 0 10px;
+		}
+
+
+		ul a {
+			text-decoration: none;
+		}
+
+		.header-nav-lists li:hover {
+			background: #32e399;
+		}
+
+		.header-nav-lists ul {
+			display: flex;
+			justify-content: space-around;
+			gap: 15px;
+		}
+
+		/* navigation header ends here */
+		/* body of header starts here */
+		.header-body {
+			margin: 3% 0;
+			display: flex;
+			justify-content: center;
+			gap: 20px;
+		}
+
+		.header-body-msg-title {
+			color: #F9FAF8;
+			font-size: 48px;
+			line-height: 1;
+			margin-bottom: 20px;
+		}
+
+		.header-body-msg-text {
+			color: #c9d1de;
+		}
+
+		.header-body-msg-button button {
+			height: 25px;
+			width: auto;
+			margin: 20px 0;
+			padding: 20px 50px;
+			color: white;
+			border-radius: 3px;
+			padding: 1px 10px;
+			background: #3882f6;
+		}
+
+		.header-body-img {
+			box-shadow: #ffffff99;
+		}
+
+		.header-body-img img {
+			width: 100%;
+			border-radius: 6px;
+		}
+
+		/* body of header styling ends here. */
+		/* detail body starts here */
+		.detail {
+			width: 100%;
+			margin-top: 20px;
+			margin-bottom: 40px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-between;
+			gap: 20px;
+			flex-flow: 1;
+		}
+
+		.detail .detail-message-box {
+			font-weight: bold;
+		}
+
+		.detail .detail-img-side {
+			display: flex;
+			gap: 25px;
+			align-items: center;
+			justify-content: center;
+			padding: 0 10%;
+		}
+
+		.detail-img-box {
+			display: flex;
+			flex-direction: column;
+			align-items: baseline;
+			justify-content: flex-start;
+			gap: 10px;
+		}
+
+		.detail-img-box .image-img,
+		.detail-img-box .image-disc {
+			flex-wrap: wrap;
+		}
+
+		.detail-img-box .image-img img {
+			width: 100%;
+		}
+
+		.detail-img-box .image-disc {
+			font-size: 10px;
+		}
+
+		/* detail body ends here */
+		/* random body starts here */
+		.random-quote {
+			width: 100%;
+			padding: 5px 10%;
+			font: 36px italic #1f2937;
+			background-color: #E5E7EB;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 15px;
+
+		}
+
+		.random-quote .quote-text {
+			margin-top: 10px;
+		}
+
+		.random-quote .quote-text-owner {
+			font-size: 12px;
+		}
+
+		/* random body ends here */
+		/* sign up body starts here */
+		.other-detail-signup {
+			width: 70%;
+			border-radius: 10px;
+			margin: 30px 0px;
+			background-color: #0a19f1;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: white;
+		}
+
+		.other-detail-signup-up {
+			width: 100%;
+			display: flex;
+			padding: 10px;
+			align-items: center;
+			justify-content: space-around;
+			gap: 10px;
+		}
+
+		.other-detail-signup-up .msg-signup {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.other-detail-signup-up .SignUp button {
+			background: #28f8ff;
+			padding: 3px 9px;
+			width: 100%;
+			border-radius: 4px;
+		}
+
+		.other-detail-signup-up .SignUp button:hover {
+			background: #ffffff;
+		}
+
+		/* sign up body ends here */
+		/* footer starts here. */
+		.footer {
+			width: 100%;
+			padding: 0 10%;
+			background: #1f2937;
+			color: white;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.footer p {
+			padding: 17.5px;
+		}
+
+		/* footer ends here. */
+	</style>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>See Utopia Landing Page</title>
