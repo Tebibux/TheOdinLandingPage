@@ -13,7 +13,6 @@ body {
 }
 
 .container {
-	background: lightgray;
 	border: 1px black solid;
 	display: flex;
 	flex-direction: column;
@@ -130,7 +129,8 @@ ul a {
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
-	gap: 10px;
+	gap: 20px;
+	flex-flow: 1;
 }
 
 .detail .detail-message-box {
@@ -140,14 +140,46 @@ ul a {
 .detail .detail-img-side {
 	display: flex;
 	gap: 25px;
-
+	align-items: center;
+	justify-content: center;
+	padding: 0 10%;
 }
 
 .detail-img-box {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: flex-start;
 	gap: 10px;
 }
 
+.detail-img-box .image-img,
+.detail-img-box .image-disc {
+	flex-wrap: wrap;
+}
+
+.detail-img-box .image-img img {
+	width: 100%;
+}
+
+.detail-img-box .image-disc {
+	font-size: 10px;
+}
+
 /* detail body ends here */
+.random-quote {
+	width: 100%;
+	padding: 5px 10%;
+	font: 36px italic #1f2937;
+	background-color: #E5E7EB;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 15px;
+}
+.random-quote .quote-text{
+	margin-top: 10px;
+}
+.random-quote .quote-text-owner{
+	font-size: 12px;
+}
